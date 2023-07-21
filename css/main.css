@@ -27,6 +27,7 @@ body {
   letter-spacing: 0;
   font-weight: 400;
   color: #000;
+  height: 4000px;
 }
 /* 공통요소 */
 .clearfix::after {
@@ -42,13 +43,19 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
-/* 전체 레이아웃 */
+/* 전체레이아웃 */
 .wrap {
   position: relative;
   display: block;
   /* 헤더가 fix가 되므로 레이아웃용 */
   padding-top: 128px;
   transition: padding-top 0.2;
+}
+.header.active {
+  top: -61px;
+}
+.wrap.active {
+  padding-top: calc(128px - 61px);
 }
 /* 상단 */
 .header {
@@ -114,16 +121,19 @@ body {
   float: left;
   padding: 0 10px;
 }
-.member-list li::after {
+.member-list > li::after {
   content: "";
   position: absolute;
   top: 7px;
   right: 0;
   width: 1px;
   height: 9px;
-  background-color: #969696;
+  background-color: #bbb;
 }
-.member-list li:last-child:after {
+.member-list > li:last-child {
+  padding-right: 0;
+}
+.member-list > li:last-child:after {
   content: none;
 }
 .member-list > li > a {
@@ -133,3 +143,450 @@ body {
   color: #666;
 }
 /* center-more는 js연동 */
+.center-more {
+  padding-right: 15px;
+}
+.center-more::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 6px;
+  display: block;
+  top: 50%;
+  right: 0;
+  transform: translatey(-50%);
+  background: url("../images/icoMyMenu.png") no-repeat;
+  background-position: 0px 0px;
+}
+.center-more:hover::after {
+  background-position: 0px -6px;
+}
+.center-list {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+  z-index: 1;
+  display: none;
+}
+.center-list > li {
+  display: block;
+  position: relative;
+}
+.center-list > li > a {
+  font-size: 13px;
+  position: relative;
+  display: block;
+  white-space: nowrap;
+}
+/* 헤더의 메인(하단) */
+.header-main {
+  display: block;
+  position: relative;
+  padding: 13px 0;
+}
+.header-main-left {
+  position: relative;
+  display: block;
+  float: left;
+}
+.nav {
+  position: relative;
+  display: inline-block;
+  padding-top: 12px;
+  margin-right: 45px;
+}
+.gnb {
+  position: relative;
+  display: inline-block;
+  margin-left: 130px;
+}
+.gnb > li {
+  position: relative;
+  display: block;
+  float: left;
+  margin-right: 30px;
+}
+.gnb > li:last-child {
+  margin-right: 0;
+}
+.gnb > li > a {
+  position: relative;
+  display: block;
+  font-size: 17px;
+  color: #000;
+  font-weight: 500;
+  line-height: 19px;
+}
+.gnb > li > a:hover {
+  color: #76bd42;
+}
+
+.ball::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: 3;
+  width: 5px;
+  height: 5px;
+  background-color: #ff9933;
+  border-radius: 50%;
+}
+.all-bt {
+  position: relative;
+  display: block;
+  font-size: 17px;
+  color: #000;
+  font-weight: 500;
+  border: 0;
+  background-color: transparent;
+  line-height: 19px;
+  cursor: pointer;
+}
+.all-bt i {
+  display: inline-block;
+  margin-right: 12px;
+}
+/* 전체 메뉴 */
+.all-menu-area {
+  position: absolute;
+  left: 0;
+  top: 12px;
+  display: inline-block;
+  height: 43px;
+  width: 100px;
+}
+.all-menu {
+  position: absolute;
+  left: 0;
+  top: 41px;
+  width: 210px;
+  height: 0;
+  border: 1px solid #ddd;
+  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+  visibility: hidden;
+  overflow: hidden;
+  transition: width 0.5s;
+}
+.all-menu-area:hover .all-menu {
+  height: calc(100vh - 105px - 128px);
+  visibility: visible;
+}
+.all-menu:hover {
+  width: 420px;
+}
+.all-menu-cate {
+  position: relative;
+  display: block;
+  width: 210px;
+  height: calc(100vh - 105px - 128px);
+  background-color: #fff;
+  overflow: auto;
+  /* 여기에다가 스크롤을 걸어줌 */
+}
+.cate-list {
+  position: relative;
+}
+.cate-list > li {
+  position: relative;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 40px;
+}
+.cate-list > li > a {
+  position: relative;
+  display: block;
+  padding: 0 24px;
+}
+.cate-list > li > a::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 10px;
+  background: url("../images/icoGnbArr1.png") no-repeat 0 -10px;
+}
+.cate-list > li > a:hover {
+  background-color: #f9f9f9;
+  color: #76bd42;
+}
+.cate-list > li > a:hover::after {
+  display: block;
+}
+.theme-list > li {
+  position: relative;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 40px;
+}
+.theme-list > li::after {
+  content: "";
+  position: absolute;
+  left: 24px;
+  bottom: 0;
+  display: block;
+  height: 1px;
+  background-color: #ddd;
+  width: calc(100% - 24px - 24px);
+}
+.theme-list > li:first-child::before {
+  content: "";
+  position: absolute;
+  left: 24px;
+  top: 0;
+  display: block;
+  height: 1px;
+  background-color: #666;
+  width: calc(100% - 24px - 24px);
+}
+.theme-list > li:last-child::after {
+  background-color: #666;
+}
+.theme-list > li > a {
+  position: relative;
+  display: block;
+  padding: 0 24px;
+}
+.theme-list > li > a::after {
+  content: "";
+  position: absolute;
+  transform: translateY(-50%);
+  right: 20px;
+  top: 50%;
+  width: 6px;
+  height: 10px;
+  background: url("../images/icoGnbArr1.png") no-repeat 0 0px;
+}
+.theme-list > li > a:hover {
+  color: #76bd42;
+}
+.theme-list > li > a:hover::after {
+  background-position: 0px -10px;
+}
+.theme-list > li > a > span {
+  position: relative;
+  display: inline-block;
+}
+.theme-list .ball::after {
+  top: 10px;
+}
+.deli-list > li {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.deli-list > li > a {
+  position: relative;
+  display: block;
+  padding: 0 24px;
+  color: #666;
+}
+.deli-list > li > a:hover {
+  color: #76bd42;
+}
+.deli-list > li > a::after {
+  content: "";
+  position: absolute;
+  transform: translateY(-50%);
+  right: 20px;
+  top: 50%;
+  width: 6px;
+  height: 10px;
+  background: url("../images/icoGnbArr1.png") no-repeat 0 0px;
+}
+.deli-list > li > a:hover::after {
+  background-position: 0px -10px;
+}
+.all-menu-cate-wrap {
+  position: absolute;
+  left: 210px;
+  top: 0;
+  width: 210px;
+}
+.cate-depth2-list {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 0 24px;
+  /* depth2를 한자리에 모은 것 */
+}
+.cate-depth2-list > li {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 40px;
+}
+.cate-depth2-list > li > a:hover {
+  color: #76bd42;
+  text-decoration: underline;
+}
+
+/* 참여 더보기 목록 */
+.join-bt {
+  position: relative;
+  display: block;
+  font-size: 17px;
+  color: #000;
+  font-weight: 500;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  line-height: 19px;
+}
+.join-bt:hover {
+  color: #76bd42;
+}
+.join-bt-icon {
+  position: relative;
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background: url("../images/icoGnbArr2.png") no-repeat;
+  background-position: 0px 0px;
+  vertical-align: 2px;
+  margin-left: 2px;
+}
+/* 클래스 포커스했을때 처리 */
+.join-bt.active {
+  color: #76bd42;
+}
+.join-bt.active .join-bt-icon {
+  background-position: 0px -8px;
+}
+.join-list,
+.more-menu-list {
+  position: absolute;
+  background-color: #fff;
+  padding: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 42px;
+  border: 1px solid #ddd;
+  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+  display: none;
+}
+.join-list > li,
+.more-menu-list > li {
+  position: relative;
+  display: block;
+  padding: 7px 0;
+  text-align: left;
+}
+.join-list > li > a,
+.more-menu-list > li > a {
+  position: relative;
+  display: inline-block;
+  font-size: 15px;
+  color: #666;
+  white-space: nowrap;
+  line-height: 19px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+.join-list > li > a:hover,
+.more-menu-list > li > a:hover {
+  font-weight: 600;
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+.more-menu {
+  position: relative;
+  display: inline-block;
+}
+.more-menu-bt {
+  position: relative;
+  display: inline-block;
+  font-size: 13px;
+  color: #666;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  line-height: 19px;
+  vertical-align: 5px;
+}
+.more-menu-icon {
+  display: inline-block;
+  width: 10px;
+  height: 6px;
+  background: url("../images/icoGnbArr3.png") no-repeat;
+  background-position: 0px 0px;
+  margin-left: 3px;
+  vertical-align: 2px;
+}
+.more-menu-bt.active {
+  color: #76bd42;
+}
+.more-menu-bt.active .more-menu-icon {
+  background-position: 0px -6px;
+}
+
+.header-main-right {
+  position: relative;
+  display: block;
+  float: right;
+}
+.search-form {
+  position: relative;
+  display: block;
+  float: left;
+}
+.search-txt {
+  position: relative;
+  display: block;
+  width: 320px;
+  height: 40px;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 45px;
+  border: 1px solid #f7f7f7;
+  line-height: 40px;
+  font-size: 13px;
+}
+.search-txt:focus {
+  background-color: #fff;
+  border: 1px solid #76bd42;
+  color: #000;
+}
+.search-bt {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  background: url("../images/btnSearch.png") no-repeat;
+  cursor: pointer;
+  font-size: 0;
+  display: block;
+  border: 0;
+}
+.bucket {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url("../images/btnCart.png") no-repeat;
+  float: left;
+  margin-top: 6px;
+  margin-left: 25px;
+}
+.bucket-count {
+  position: absolute;
+  right: -4px;
+  top: -1px;
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  background-color: #76bd42;
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: 700;
+}
