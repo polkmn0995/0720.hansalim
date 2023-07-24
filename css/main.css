@@ -43,6 +43,12 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
+
+/* section 레이아웃 공통 패딩 */
+.wrap > section {
+  padding: 80px 0;
+}
+
 /* 전체레이아웃 */
 .wrap {
   position: relative;
@@ -57,6 +63,7 @@ body {
 .wrap.active {
   padding-top: calc(128px - 61px);
 }
+
 /* 상단 */
 .header {
   position: fixed;
@@ -158,7 +165,7 @@ body {
   background: url("../images/icoMyMenu.png") no-repeat;
   background-position: 0px 0px;
 }
-.center-more:hover::after {
+.center-more.active::after {
   background-position: 0px -6px;
 }
 .center-list {
@@ -182,6 +189,7 @@ body {
   display: block;
   white-space: nowrap;
 }
+
 /* 헤더의 메인(하단) */
 .header-main {
   display: block;
@@ -250,6 +258,7 @@ body {
   display: inline-block;
   margin-right: 12px;
 }
+
 /* 전체 메뉴 */
 .all-menu-area {
   position: absolute;
@@ -275,7 +284,7 @@ body {
   height: calc(100vh - 105px - 128px);
   visibility: visible;
 }
-.all-menu:hover {
+.all-menu.active {
   width: 420px;
 }
 .all-menu-cate {
@@ -309,10 +318,11 @@ body {
   transform: translateY(-50%);
   width: 6px;
   height: 10px;
+  display: none;
   background: url("../images/icoGnbArr1.png") no-repeat 0 -10px;
 }
 .cate-list > li > a:hover {
-  background-color: #f9f9f9;
+  background-color: #e9e9e9;
   color: #76bd42;
 }
 .cate-list > li > a:hover::after {
@@ -451,6 +461,7 @@ body {
   vertical-align: 2px;
   margin-left: 2px;
 }
+
 /* 클래스 포커스했을때 처리 */
 .join-bt.active {
   color: #76bd42;
@@ -590,3 +601,21 @@ body {
   line-height: 18px;
   font-weight: 700;
 }
+
+/* 비주얼 */
+.visual {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 410px;
+  padding: 0;
+  overflow: hidden;
+}
+.visual-slide {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* 슬라이드 이전 다음 버튼 */

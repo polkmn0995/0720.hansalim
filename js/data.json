@@ -1,0 +1,14 @@
+{
+  "visual": [
+    { "pic": "swiper_img_01.jpg", "id": "vi", "link": "#", "name": "베너" },
+    { "pic": "swiper_img_02.jpg", "id": "vi", "link": "#", "name": "베너" },
+    { "pic": "swiper_img_03.jpg", "id": "vi", "link": "#", "name": "베너" },
+    { "pic": "swiper_img_04.jpg", "id": "vi", "link": "#", "name": "베너" },
+    { "pic": "swiper_img_05.jpg", "id": "vi", "link": "#", "name": "베너" },
+    { "pic": "swiper_img_06.jpg", "id": "vi", "link": "#", "name": "베너" },
+    { "pic": "swiper_img_07.jpg", "id": "vi", "link": "#", "name": "베너" },
+    { "pic": "swiper_img_08.jpg", "id": "vi", "link": "#", "name": "베너" },
+    { "pic": "swiper_img_09.jpg", "id": "vi", "link": "#", "name": "베너" },
+    { "pic": "swiper_img_10.jpg", "id": "vi", "link": "#", "name": "베너" }
+  ]
+}
