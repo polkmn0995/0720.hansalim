@@ -79,7 +79,6 @@
     <![endif]-->
     <!-- CSS3 적용 -->
     <!-- <script src="js/prefixfree.min.js"></script> -->
-    <link rel="stylesheet" href="css/main.css" />
     <!-- css초기화 -->
     <link rel="stylesheet" href="css/normalize.css" />
     <!-- fontawsome -->
@@ -90,15 +89,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- swiper css-->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- link Swiper's css -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-    <!-- swiper js-->
+
+    <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
   </head>
+
   <body>
     <!-- 안내창 -->
     <!-- 고정메뉴 -->
@@ -109,16 +111,16 @@
         <div class="container">
           <!-- 헤더의 상단 -->
           <div class="header-top clearfix">
-            <!-- 헤더상단 왼쪽 -->
+            <!-- 헤더상단의 왼쪽 -->
             <div class="header-top-left">
               <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="한살림장보기 로고" />
+                <img src="images/logo.png" alt="한살림 장보기" />
               </a>
               <button class="bt-schedule">
                 <img src="images/icoLocation.png" alt="공급일" />공급일
               </button>
             </div>
-            <!-- 헤더상단 오른쪽 -->
+            <!-- 헤더상단의 오른쪽 -->
             <div class="header-top-right">
               <a href="#" class="track">
                 <img src="images/icoDlvr.png" alt="배송조회" />
@@ -134,7 +136,9 @@
                     <li><a href="#">이용후기</a></li>
                     <li><a href="#">물품소식</a></li>
                     <li><a href="#">공지사항</a></li>
-                    <li><a href="#">방사성물질검사결과</a></li>
+                    <li>
+                      <a href="#">방사성물질검사결과</a>
+                    </li>
                     <li><a href="#">축산물이력검사</a></li>
                   </ul>
                 </li>
@@ -147,7 +151,7 @@
             <!-- 헤더 메인의 왼쪽 -->
             <div class="header-main-left">
               <nav class="nav">
-                <!-- 전체메뉴레이아웃 -->
+                <!-- 전체메뉴 레이아웃 -->
                 <div class="all-menu-area">
                   <button class="all-bt">
                     <i class="fa-solid fa-bars"></i>
@@ -202,7 +206,7 @@
                       </ul>
                       <ul class="theme-list">
                         <li>
-                          <a href="#"><span class="ball">꼬마와땅</span></a>
+                          <a href="#"><span class="ball">영유아</span></a>
                         </li>
                         <li>
                           <a href="#"><span class="ball">채식</span></a>
@@ -483,20 +487,20 @@
                     </div>
                   </div>
                 </div>
-                <!--전체메뉴 레이아웃끝 -->
+                <!-- //전체메뉴 레이아웃 -->
                 <ul class="gnb clearfix">
                   <li><a href="#">추천</a></li>
                   <li><a href="#">알뜰</a></li>
                   <li><a href="#">새물품</a></li>
                   <li><a href="#">사전예약</a></li>
-                  <li><a href="#" class="ball">꼬마와땅</a></li>
+                  <li><a href="#" class="ball">영유아</a></li>
                   <li><a href="#" class="ball">채식</a></li>
                   <li>
                     <button class="join-bt" id="join-bt">
                       참여 <i class="join-bt-icon"></i>
                     </button>
                     <ul class="join-list" id="join-list">
-                      <li><a href="#">신규물품제한</a></li>
+                      <li><a href="#">신규물품제안</a></li>
                       <li><a href="#">모임과행사</a></li>
                       <li><a href="#">참여이벤트</a></li>
                     </ul>
@@ -515,6 +519,7 @@
                 </ul>
               </div>
             </div>
+            <!--// 헤더 메인의 왼쪽 -->
             <!-- 헤더 메인의 오른쪽 -->
             <div class="header-main-right clearfix">
               <form action="" method="get" class="search-form">
@@ -535,7 +540,7 @@
       <!-- 비주얼 -->
       <section class="visual">
         <div class="visual-slide">
-          <!-- 비주얼 슬라이드 swiper -->
+          <!-- 비주얼 슬라이드 -->
           <div class="swiper sw-visual">
             <div class="swiper-wrapper" id="data-visual">
               <!-- 데이터 출력 -->
@@ -545,23 +550,83 @@
         <!-- 좌우 슬라이드 이동 버튼 -->
         <button class="visual-prev">이전</button>
         <button class="visual-next">다음</button>
-        <!-- 슬라이드 컨트롤러 -->
+        <!-- 슬라이드 콘트롤러 -->
         <div class="visual-control clearfix">
           <button class="visual-play"></button>
-          <div class="visual-pg">1 / 10</div>
+          <div class="visual-pg">1/17</div>
           <button class="visual-more"></button>
         </div>
       </section>
-      <!-- 오늘의상품 -->
-      <!-- 알뜰상품 -->
+
+      <!-- 오늘의 상품 -->
+      <section class="today">
+        <div class="container">
+          <h2 class="section-title">
+            <b>이 물품은 어떠세요?</b>
+          </h2>
+          <div class="good-wrap" id="data-today">
+            <!-- 외부 오늘상품 테이터 연동 js -->
+          </div>
+          <div class="good-wrap no-mb" id="data-today2">
+            <!-- 외부 오늘상품 테이터 연동 js -->
+          </div>
+        </div>
+      </section>
+      <!-- 알뜰 상품 -->
+      <section class="sale">
+        <div class="container">
+          <div class="layout-wrap clearfix">
+            <div class="layout-left">
+              <h2 class="section-title section-bar">
+                놓치기 아쉬운<br />
+                <b>알뜰물품</b>
+              </h2>
+              <p class="section-title-txt">
+                가격인하 물품을 <br />
+                지금 바로 이용해 보세요
+              </p>
+              <a href="#" class="section-bt">더보기</a>
+              <div class="slide-control">
+                <div class="slide-pg"></div>
+                <button class="slide-prev">이전</button>
+                <button class="slide-next">다음</button>
+              </div>
+            </div>
+            <div class="layout-right">
+              <!-- 알뜰상품 슬라이드 -->
+              <div class="good-slide" id="data-sale">
+                <!-- 외부 데이터 연동js -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- 신상품 -->
+      <section class="new">
+        <div class="container">
+          <h2 class="section-title">
+            반가운 <br />
+            <b>새 물품</b>
+            <a href="#" class="section-bt">더보기</a>
+          </h2>
+          <!-- 새물품 내용 -->
+          <div class="new-wrap clearfix">
+            <div class="new-left" id="data-new">
+              <!-- 데이터 출력 json -->
+            </div>
+            <div class="new-right clearfix" id="data-new-list">
+              <!-- 데이터 출력 json -->
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- 추천물품 -->
       <!-- 인기물품 -->
       <!-- 브랜드관 -->
       <!-- 배너 -->
-      <!-- 재철요리 -->
+      <!-- 제철요리 -->
       <!-- 이용후기 -->
-      <!-- 커뮤티니 -->
+      <!-- 커뮤니티 -->
       <!-- 하단 -->
     </div>
   </body>

@@ -1,0 +1,199 @@
+{
+  "visual": [
+    { "pic": "swiper_img_01.jpg", "id": "v1", "link": "#", "name": "배너" },
+    { "pic": "swiper_img_02.jpg", "id": "v2", "link": "#", "name": "배너" },
+    { "pic": "swiper_img_03.jpg", "id": "v3", "link": "#", "name": "배너" },
+    { "pic": "swiper_img_04.jpg", "id": "v4", "link": "#", "name": "배너" },
+    { "pic": "swiper_img_05.jpg", "id": "v5", "link": "#", "name": "배너" },
+    { "pic": "swiper_img_06.jpg", "id": "v6", "link": "#", "name": "배너" },
+    { "pic": "swiper_img_07.jpg", "id": "v7", "link": "#", "name": "배너" },
+    { "pic": "swiper_img_08.jpg", "id": "v8", "link": "#", "name": "배너" },
+    { "pic": "swiper_img_09.jpg", "id": "v9", "link": "#", "name": "배너" },
+    { "pic": "swiper_img_10.jpg", "id": "v10", "link": "#", "name": "배너" }
+  ],
+  "todaygood": [
+    {
+      "name": "콩콩크림빵",
+      "unit": "1개",
+      "price": 1500,
+      "tag": "인기",
+      "pic": "good_1.jpg",
+      "id": "0",
+      "link": "#"
+    },
+    {
+      "name": "콩콩크림빵",
+      "unit": "1개",
+      "price": 1500,
+      "tag": "인기",
+      "pic": "good_2.jpg",
+      "id": "0",
+      "link": "#"
+    },
+    {
+      "name": "콩콩크림빵",
+      "unit": "1개",
+      "price": 1500,
+      "tag": "인기",
+      "pic": "good_3.jpg",
+      "id": "0",
+      "link": "#"
+    },
+    {
+      "name": "콩콩크림빵",
+      "unit": "1개",
+      "price": 1500,
+      "tag": "인기",
+      "pic": "good_4.jpg",
+      "id": "0",
+      "link": "#"
+    },
+    {
+      "name": "콩콩크림빵",
+      "unit": "1개",
+      "price": 1500,
+      "tag": "인기",
+      "pic": "good_5.jpg",
+      "id": "0",
+      "link": "#"
+    },
+    {
+      "name": "콩콩크림빵",
+      "unit": "1개",
+      "price": 1500,
+      "tag": "인기",
+      "pic": "good_6.jpg",
+      "id": "0",
+      "link": "#"
+    },
+    {
+      "name": "콩콩크림빵",
+      "unit": "1개",
+      "price": 1500,
+      "tag": "인기",
+      "pic": "good_7.jpg",
+      "id": "0",
+      "link": "#"
+    },
+    {
+      "name": "콩콩크림빵",
+      "unit": "1개",
+      "price": 1500,
+      "tag": "인기",
+      "pic": "good_8.jpg",
+      "id": "0",
+      "link": "#"
+    }
+  ],
+  "salegood": [
+    {
+      "name": "콩콩크림빵",
+      "unit": "1개",
+      "price": 1500,
+      "tag": "인기",
+      "pic": "good_1.jpg",
+      "id": "0",
+      "link": "#"
+    },
+    {
+      "name": "콩콩크림빵",
+      "unit": "1개",
+      "price": 1500,
+      "tag": "인기",
+      "pic": "good_2.jpg",
+      "id": "0",
+      "link": "#"
+    },
+    {
+      "name": "콩콩크림빵",
+      "unit": "1개",
+      "price": 1500,
+      "tag": "인기",
+      "pic": "good_3.jpg",
+      "id": "0",
+      "link": "#"
+    },
+    {
+      "name": "콩콩크림빵",
+      "unit": "1개",
+      "price": 1500,
+      "tag": "인기",
+      "pic": "good_4.jpg",
+      "id": "0",
+      "link": "#"
+    },
+    {
+      "name": "콩콩크림빵",
+      "unit": "1개",
+      "price": 1500,
+      "tag": "인기",
+      "pic": "good_5.jpg",
+      "id": "0",
+      "link": "#"
+    },
+    {
+      "name": "콩콩크림빵",
+      "unit": "1개",
+      "price": 1500,
+      "tag": "인기",
+      "pic": "good_6.jpg",
+      "id": "0",
+      "link": "#"
+    },
+    {
+      "name": "콩콩크림빵",
+      "unit": "1개",
+      "price": 1500,
+      "tag": "인기",
+      "pic": "good_7.jpg",
+      "id": "0",
+      "link": "#"
+    },
+    {
+      "name": "콩콩크림빵",
+      "unit": "1개",
+      "price": 1500,
+      "tag": "인기",
+      "pic": "good_8.jpg",
+      "id": "0",
+      "link": "#"
+    }
+  ],
+  "newgood": [
+    {
+      "title": "조리가 간편하고 부드러운 맛을 내는 '장국된장'",
+      "txt": "밀가루 없이 국산 무농약 감자와 감자전분으로만 만든 옹심이",
+      "pic": "new_1.jpg",
+      "id": "0",
+      "link": "#"
+    },
+    {
+      "title": "따로 육수 낼 필요 없이 진한 국물 ‘만능우동간장’",
+      "txt": "",
+      "pic": "new_2.jpg",
+      "id": "1",
+      "link": "#"
+    },
+    {
+      "title": "부드러운 남도 미역에 전복과 성게알을 더해 끓인 ‘전복성게미역국’",
+      "txt": "",
+      "pic": "new_3.jpg",
+      "id": "2",
+      "link": "#"
+    },
+    {
+      "title": "우리 땅에서 자란 친환경 사과를 부드럽게 갈아 만든 ‘꼬마와땅 사과퓨레’",
+      "txt": "",
+      "pic": "new_4.jpg",
+      "id": "3",
+      "link": "#"
+    },
+    {
+      "title": "조리가 간편하고 부드러운 맛을 내는 '장국된장'",
+      "txt": "",
+      "pic": "new_5.jpg",
+      "id": "4",
+      "link": "#"
+    }
+  ]
+}
