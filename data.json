@@ -195,5 +195,463 @@
       "id": "4",
       "link": "#"
     }
+  ],
+  "recommendgood": [
+    {
+      "name": "콩콩크림빵",
+      "unit": "1개",
+      "price": 1500,
+      "tag": "인기",
+      "pic": "good_1.jpg",
+      "id": "0",
+      "link": "#"
+    },
+    {
+      "name": "콩콩크림빵",
+      "unit": "1개",
+      "price": 1500,
+      "tag": "인기",
+      "pic": "good_2.jpg",
+      "id": "0",
+      "link": "#"
+    },
+    {
+      "name": "콩콩크림빵",
+      "unit": "1개",
+      "price": 1500,
+      "tag": "인기",
+      "pic": "good_3.jpg",
+      "id": "0",
+      "link": "#"
+    },
+    {
+      "name": "콩콩크림빵",
+      "unit": "1개",
+      "price": 1500,
+      "tag": "인기",
+      "pic": "good_4.jpg",
+      "id": "0",
+      "link": "#"
+    },
+    {
+      "name": "콩콩크림빵",
+      "unit": "1개",
+      "price": 1500,
+      "tag": "인기",
+      "pic": "good_5.jpg",
+      "id": "0",
+      "link": "#"
+    },
+    {
+      "name": "콩콩크림빵",
+      "unit": "1개",
+      "price": 1500,
+      "tag": "인기",
+      "pic": "good_6.jpg",
+      "id": "0",
+      "link": "#"
+    },
+    {
+      "name": "콩콩크림빵",
+      "unit": "1개",
+      "price": 1500,
+      "tag": "인기",
+      "pic": "good_7.jpg",
+      "id": "0",
+      "link": "#"
+    },
+    {
+      "name": "콩콩크림빵",
+      "unit": "1개",
+      "price": 1500,
+      "tag": "인기",
+      "pic": "good_8.jpg",
+      "id": "0",
+      "link": "#"
+    }
+  ],
+  "popularicon": [
+    {
+      "id": "icon-1",
+      "icon": "icon_1.png",
+      "txt": "쌀/잡곡",
+      "link": "#"
+    },
+    {
+      "id": "icon-2",
+      "icon": "icon_2.png",
+      "txt": "채소/버섯",
+      "link": "#"
+    },
+    {
+      "id": "icon-3",
+      "icon": "icon_3.png",
+      "txt": "과일/견과",
+      "link": "#"
+    },
+    {
+      "id": "icon-4",
+      "icon": "icon_4.png",
+      "txt": "축산/축산가공",
+      "link": "#"
+    },
+    {
+      "id": "icon-5",
+      "icon": "icon_5.png",
+      "txt": "수산/수산가공",
+      "link": "#"
+    },
+    {
+      "id": "icon-6",
+      "icon": "icon_6.png",
+      "txt": "반찬/양념/가루",
+      "link": "#"
+    },
+    {
+      "id": "icon-7",
+      "icon": "icon_7.png",
+      "txt": "식사대용/간편식",
+      "link": "#"
+    },
+    {
+      "id": "icon-8",
+      "icon": "icon_8.png",
+      "txt": "간식/음료/유제품",
+      "link": "#"
+    },
+    {
+      "id": "icon-9",
+      "icon": "icon_9.png",
+      "txt": "건강/차",
+      "link": "#"
+    },
+    {
+      "id": "icon-10",
+      "icon": "icon_10.png",
+      "txt": "화장품/오가닉코튼",
+      "link": "#"
+    },
+    {
+      "id": "icon-11",
+      "icon": "icon_11.png",
+      "txt": "주방/욕실/세정",
+      "link": "#"
+    },
+    {
+      "id": "icon-12",
+      "icon": "icon_12.png",
+      "txt": "휴지/생활",
+      "link": "#"
+    },
+    {
+      "id": "icon-13",
+      "icon": "icon_13.png",
+      "txt": "반려동물",
+      "link": "#"
+    },
+    {
+      "id": "icon-14",
+      "icon": "icon_14.png",
+      "txt": "대용량/어린이집",
+      "link": "#"
+    }
+  ],
+  "populargood": {
+    "populargood-1": [
+      {
+        "name": "콩콩크림빵",
+        "unit": "1개",
+        "price": 1500,
+        "tag": "인기",
+        "pic": "good_1.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "콩콩크림빵",
+        "unit": "1개",
+        "price": 1500,
+        "tag": "인기",
+        "pic": "good_1.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "콩콩크림빵",
+        "unit": "1개",
+        "price": 1500,
+        "tag": "인기",
+        "pic": "good_1.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "콩콩크림빵",
+        "unit": "1개",
+        "price": 1500,
+        "tag": "인기",
+        "pic": "good_1.jpg",
+        "id": "0",
+        "link": "#"
+      }
+    ],
+    "populargood-2": [
+      {
+        "name": "222",
+        "unit": "1개",
+        "price": 1500,
+        "tag": "인기",
+        "pic": "good_2.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "222",
+        "unit": "1개",
+        "price": 1500,
+        "tag": "인기",
+        "pic": "good_2.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "222",
+        "unit": "1개",
+        "price": 1500,
+        "tag": "인기",
+        "pic": "good_2.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "222",
+        "unit": "1개",
+        "price": 1500,
+        "tag": "인기",
+        "pic": "good_2.jpg",
+        "id": "0",
+        "link": "#"
+      }
+    ],
+    "populargood-3": [
+      {
+        "name": "222",
+        "unit": "1개",
+        "price": 1500,
+        "tag": "인기",
+        "pic": "good_3.jpg",
+        "id": "0",
+        "link": "#"
+      }
+    ],
+    "populargood-4": [
+      {
+        "name": "222",
+        "unit": "1개",
+        "price": 1500,
+        "tag": "인기",
+        "pic": "good_4.jpg",
+        "id": "0",
+        "link": "#"
+      }
+    ],
+    "populargood-5": [
+      {
+        "name": "222",
+        "unit": "1개",
+        "price": 1500,
+        "tag": "인기",
+        "pic": "good_5.jpg",
+        "id": "0",
+        "link": "#"
+      }
+    ],
+    "populargood-6": [
+      {
+        "name": "222",
+        "unit": "1개",
+        "price": 1500,
+        "tag": "인기",
+        "pic": "good_6.jpg",
+        "id": "0",
+        "link": "#"
+      }
+    ],
+    "populargood-7": [
+      {
+        "name": "222",
+        "unit": "1개",
+        "price": 1500,
+        "tag": "인기",
+        "pic": "good_7.jpg",
+        "id": "0",
+        "link": "#"
+      }
+    ],
+    "populargood-8": [
+      {
+        "name": "222",
+        "unit": "1개",
+        "price": 1500,
+        "tag": "인기",
+        "pic": "good_8.jpg",
+        "id": "0",
+        "link": "#"
+      }
+    ],
+    "populargood-9": [
+      {
+        "name": "222",
+        "unit": "1개",
+        "price": 1500,
+        "tag": "인기",
+        "pic": "good_1.jpg",
+        "id": "0",
+        "link": "#"
+      }
+    ],
+    "populargood-10": [
+      {
+        "name": "222",
+        "unit": "1개",
+        "price": 1500,
+        "tag": "인기",
+        "pic": "good_2.jpg",
+        "id": "0",
+        "link": "#"
+      }
+    ],
+    "populargood-11": [
+      {
+        "name": "222",
+        "unit": "1개",
+        "price": 1500,
+        "tag": "인기",
+        "pic": "good_3.jpg",
+        "id": "0",
+        "link": "#"
+      }
+    ],
+    "populargood-12": [
+      {
+        "name": "222",
+        "unit": "1개",
+        "price": 1500,
+        "tag": "인기",
+        "pic": "good_4.jpg",
+        "id": "0",
+        "link": "#"
+      }
+    ],
+    "populargood-13": [
+      {
+        "name": "222",
+        "unit": "1개",
+        "price": 1500,
+        "tag": "인기",
+        "pic": "good_5.jpg",
+        "id": "0",
+        "link": "#"
+      }
+    ],
+    "populargood-14": [
+      {
+        "name": "222",
+        "unit": "1개",
+        "price": 1500,
+        "tag": "인기",
+        "pic": "good_6.jpg",
+        "id": "0",
+        "link": "#"
+      }
+    ]
+  },
+  "brandarr": [
+    {
+      "name": "참여인증",
+      "title1": "참여공동체",
+      "value1": "51곳",
+      "title2": "재배면적",
+      "value2": "9,441,668㎡",
+      "pic": "brand_1.png",
+      "id": "브랜드1",
+      "link": "#"
+    },
+    {
+      "name": "병재사용",
+      "title1": "온실가스",
+      "value1": "105.1톤↓",
+      "title2": "소나무",
+      "value2": "8,866그루↑",
+      "pic": "brand_2.png",
+      "id": "브랜드2",
+      "link": "#"
+    },
+    {
+      "name": "토박이씨앗살림",
+      "title1": "생산량",
+      "value1": "253.693kg",
+      "title2": "재배면적",
+      "value2": "72만㎡",
+      "pic": "brand_3.png",
+      "id": "브랜드3",
+      "link": "#"
+    },
+    {
+      "name": "우리보리살림",
+      "title1": "사육두수",
+      "value1": "116,000두",
+      "title2": "보리농지면적",
+      "value2": "800,000㎡",
+      "pic": "brand_4.png",
+      "id": "브랜드4",
+      "link": "#"
+    },
+    {
+      "name": "가까운 먹을거리",
+      "title1": "온실가스",
+      "value1": "1,640톤↓",
+      "title2": "소나무",
+      "value2": "248,561그루↑",
+      "pic": "brand_5.png ",
+      "id": "브랜드5",
+      "link": "#"
+    },
+    {
+      "name": "우리밀 살리기",
+      "title1": "공급량",
+      "value1": "1,436,129kg",
+      "title2": "온실가스",
+      "value2": "5,055톤↓",
+      "pic": "brand_6.png",
+      "id": "브랜드6",
+      "link": "#"
+    }
+  ],
+  "bannerarr": [
+    {
+      "link": "#",
+      "image": "banner_1.jpg",
+      "id": "banner1",
+      "title": "배너1"
+    },
+    {
+      "link": "#",
+      "image": "banner_2.jpg",
+      "id": "banner2",
+      "title": "배너2"
+    },
+    {
+      "link": "#",
+      "image": "banner_3.jpg",
+      "id": "banner3",
+      "title": "배너3"
+    },
+    {
+      "link": "#",
+      "image": "banner_4.jpg",
+      "id": "banner4",
+      "title": "배너4"
+    }
   ]
 }

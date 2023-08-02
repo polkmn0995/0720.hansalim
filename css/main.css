@@ -29,7 +29,6 @@ body {
   color: #000;
   height: 5000px;
 }
-
 /* 공통요소 */
 .clearfix::after {
   content: "";
@@ -53,7 +52,7 @@ body {
 .wrap > section {
   padding: 80px 0;
 }
-/* 타이틀 레이dl웃 */
+/* 타이틀 레이웃 */
 .section-title {
   position: relative;
   display: block;
@@ -73,10 +72,10 @@ body {
   content: "";
   position: absolute;
   bottom: 0px;
-  left: 0px;
+  left: 2px;
   width: 20px;
   height: 2px;
-  background: #707070;
+  background-color: #707070;
 }
 .section-title-txt {
   position: relative;
@@ -94,21 +93,22 @@ body {
   background-color: #fff;
   color: #666;
   font-size: 13px;
-  transition: background-color 0.5s;
+  transition: background 0.5s;
 }
 .section-bt:hover {
-  background-color: #f9f9f9 !important;
+  background: #f9f9f9;
 }
 .slide-control {
   position: relative;
   display: block;
   width: 140px;
-  margin-top: 0;
+  margin-top: 0px;
 }
 .slide-prev,
 .slide-next {
   position: absolute;
   top: 0;
+  display: block;
   width: 26px;
   height: 20px;
   border: 0;
@@ -118,16 +118,14 @@ body {
 }
 .slide-prev {
   background: url("../images/swiperArrP.png") no-repeat;
-  background-position: 0 0;
   left: 0;
 }
 .slide-prev:hover {
   background-position: 0px -20px;
 }
 .slide-next {
-  background: url("../images/swiperArrN.png") no-repeat;
-  background-position: 0 0;
   right: 0;
+  background: url("../images/swiperArrN.png") no-repeat;
 }
 .slide-next:hover {
   background-position: 0px -20px;
@@ -136,9 +134,8 @@ body {
   position: relative;
   display: block;
   text-align: center;
-  bottom: 1.6px !important;
+  bottom: 0 !important;
 }
-
 /* 전체레이아웃 */
 .wrap {
   position: relative;
@@ -153,7 +150,6 @@ body {
 .wrap.active {
   padding-top: calc(128px - 61px);
 }
-
 /* 상단 */
 .header {
   position: fixed;
@@ -195,7 +191,7 @@ body {
 }
 .bt-schedule img {
   vertical-align: -3px;
-  margin-right: 4px;
+  padding-right: 5px;
 }
 .header-top-right {
   position: relative;
@@ -239,7 +235,6 @@ body {
   font-size: 13px;
   color: #666;
 }
-
 /* center-more는 js연동 */
 .center-more {
   padding-right: 15px;
@@ -280,7 +275,6 @@ body {
   display: block;
   white-space: nowrap;
 }
-
 /* 헤더의 메인(하단) */
 .header-main {
   display: block;
@@ -349,7 +343,6 @@ body {
   display: inline-block;
   margin-right: 12px;
 }
-
 /* 전체 메뉴 */
 .all-menu-area {
   position: absolute;
@@ -530,7 +523,6 @@ body {
   color: #76bd42;
   text-decoration: underline;
 }
-
 /* 참여 더보기 목록 */
 .join-bt {
   position: relative;
@@ -556,7 +548,6 @@ body {
   vertical-align: 2px;
   margin-left: 2px;
 }
-
 /* 클래스 포커스했을때 처리 */
 .join-bt.active {
   color: #76bd42;
@@ -697,7 +688,6 @@ body {
   font-size: 11px;
   font-weight: 700;
 }
-
 /* 비주얼 */
 .visual {
   position: relative;
@@ -738,7 +728,6 @@ body {
   height: 100%;
   object-fit: cover;
 }
-
 /* 슬라이드 이전 다음 버튼 */
 .visual-prev,
 .visual-next {
@@ -774,7 +763,6 @@ body {
   background: rgba(0, 0, 0, 0.3) url("../images/visualArrN.png") no-repeat;
   background-position: 0px 0px;
 }
-
 /* 콘트롤러 */
 .visual-control {
   position: absolute;
@@ -806,7 +794,7 @@ body {
   text-align: center;
   color: #fff !important;
   line-height: 31px;
-  text-indent: 3px;
+  text-indent: 1px;
   letter-spacing: -1px;
   font-size: 14px;
   font-weight: 700;
@@ -825,7 +813,6 @@ body {
   margin-left: 3px;
   float: left;
 }
-
 /* 오늘의 상품 */
 .today {
   position: relative;
@@ -910,7 +897,6 @@ body {
 .no-mb {
   margin-bottom: 0;
 }
-
 /* 섹션 레이아웃 */
 .layout-wrap {
   position: relative;
@@ -932,13 +918,325 @@ body {
   position: relative;
   display: block;
 }
-
 /* 알뜰 상품 */
 .sale {
   position: relative;
   display: block;
-  background-color: #edf9f9 !important;
+  background-color: #edf9f9;
 }
 .sale .slide-control {
   margin-top: 100px;
+}
+/* 신상품 */
+.new {
+  position: relative;
+  display: block;
+}
+.new .section-bt {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.new-wrap {
+  position: relative;
+  display: block;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 50px;
+}
+.new-left {
+  position: relative;
+  display: block;
+  width: calc(50% - 8px);
+  float: left;
+}
+.new-img {
+  position: relative;
+  display: block;
+  height: 370px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.new-title {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 700;
+}
+.new-txt {
+  position: relative;
+  display: block;
+  font-size: 17px;
+}
+.new-right {
+  position: relative;
+  display: block;
+  width: calc(50% - 8px);
+  float: right;
+}
+.new-box {
+  position: relative;
+  display: block;
+  width: calc(50% - 8px);
+}
+.new-box-img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.new-box-img img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 102%;
+}
+.new-box-title {
+  position: relative;
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
+  /* 말줄임 ...처리 */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+/* 홀수는 float:left */
+.new-right .new-box:nth-child(2n + 1) {
+  float: left;
+}
+/* 짝수는 float:right */
+.new-right .new-box:nth-child(2n) {
+  float: right;
+}
+
+/* 추천상품 */
+.recommend {
+  position: relative;
+  display: block;
+  background-color: #fff8fa;
+}
+.recommend .section-title-txt {
+  font-size: 17px;
+  border-bottom: 2px solid #76bd42;
+  display: inline-block;
+}
+.blue {
+  color: #76bd42;
+}
+
+/* 인기물품 */
+.popular {
+  position: relative;
+  display: block;
+}
+.popular-more {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 34px;
+  padding: 0 20px;
+  border: 1px solid #bbb;
+  line-height: 34px;
+  display: inline-block;
+  text-align: center;
+  font-size: 13px;
+}
+.popular-more:hover {
+  background: #f9f9f9;
+}
+.popular-cate {
+  position: relative;
+  display: block;
+  margin-bottom: 40px;
+}
+.popular-slide {
+  position: relative;
+  display: block;
+  width: calc(100% - 80px - 80px);
+  height: 140px;
+  float: left;
+}
+.popular-slide a {
+  position: relative;
+  display: block;
+  width: 140px;
+  height: 140px;
+  background-color: #f9f9f9;
+  border: 2px solid #fff;
+}
+.popular-slide a:hover {
+  background-color: #fff;
+  border: 2px solid #76bd42;
+}
+
+.popular-slide-prev,
+.popular-slide-next {
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 140px;
+  background-color: #fff;
+}
+.popular-slide-prev {
+  float: left;
+}
+.popular-slide-prev span {
+  background: url("../images/swiperArrP.png") no-repeat;
+  background-position: 0 0;
+  font-size: 0;
+  position: absolute;
+  width: 26px;
+  height: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  cursor: pointer;
+}
+.popular-slide-prev span:hover {
+  background-position: 0 -20px;
+}
+.popular-slide-next {
+  float: right;
+}
+.popular-slide-next span {
+  background: url("../images/swiperArrN.png") no-repeat;
+  font-size: 0;
+  position: absolute;
+  width: 26px;
+  height: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  cursor: pointer;
+}
+.popular-slide-next span:hover {
+  background-position: 0 -20px;
+}
+
+.popular-cate-icon {
+  position: relative;
+  display: block;
+  width: 65px;
+  height: 64px;
+  overflow: hidden;
+  margin: 20px auto;
+}
+.popular-cate-name {
+  position: relative;
+  display: block;
+  font-size: 17px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* 브랜드 관 */
+.brand {
+  position: relative;
+  display: block;
+  background-color: #f3f9f0;
+}
+.brand .slide-control {
+  margin-top: 25px;
+}
+.brand-slide {
+  position: relative;
+  display: block;
+}
+.brand-box {
+  position: relative;
+  display: block;
+  width: 285px;
+  height: 285px;
+  background-color: #fff;
+  padding: 35px 30px;
+}
+.brand-box a {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+.brand-boxa a img {
+  position: relative;
+  display: inline-block;
+}
+.brand-box a p {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.brand-info {
+  position: relative;
+  display: block;
+}
+.brand-info > li {
+  position: relative;
+  display: block;
+  width: 50%;
+  border-right: 1px solid #e3e3e3;
+  float: left;
+}
+.brand-info > li:last-child {
+  border-right: 0;
+}
+.brand-info-title {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  margin: 5px 0;
+}
+.brand-info-value {
+  position: relative;
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+/* 배너 */
+.banner {
+  position: relative;
+  display: block;
+  padding-bottom: 0;
+}
+.banner-slide {
+  position: relative;
+  display: block;
+}
+.banner-slide-next,
+.banner-slide-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+  display: block;
+  border: 0;
+  width: 19px;
+  height: 34px;
+  cursor: pointer;
+  font-size: 0;
+}
+.banner-slide-prev {
+  background: url("../images/banner_arrow.png");
+  background-position: 0 -34px;
+  left: 20px;
+}
+.banner-slide-prev:hover {
+  background-position: 0 0px;
+}
+.banner-slide-next {
+  background: url("../images/banner_arrow.png");
+  background-position: 0 -34px;
+  transform: translateY(-50%) rotateY(-180deg);
+  right: 20px;
+}
+.banner-slide-next:hover {
+  background-position: 0 0px;
 }
