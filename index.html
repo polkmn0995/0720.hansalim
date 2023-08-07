@@ -79,6 +79,7 @@
     <![endif]-->
     <!-- CSS3 적용 -->
     <!-- <script src="js/prefixfree.min.js"></script> -->
+    <link rel="stylesheet" href="css/main.css" />
     <!-- css초기화 -->
     <link rel="stylesheet" href="css/normalize.css" />
     <!-- fontawsome -->
@@ -89,21 +90,74 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/main.css" />
-    <!-- link Swiper's css -->
+    <!-- link swiper's css -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-
     <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
-  </head>
 
+    <!-- Smooth Scrollbar -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.1/smooth-scrollbar.js"
+      integrity="sha512-yn9N2uBs4OocMUaJ9wZK6ELv+qXIULoRa7IvOsGz2wqWQRt8mNqU1L2I9Fau24PPxEKlGxuEDkRKvsanwAWUYw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="js/script.js" defer></script>
+  </head>
   <body>
     <!-- 안내창 -->
+    <div class="modal-wrap">
+      <div class="modal-main">
+        <span class="modal-logo">
+          <img src="images/사람 아이콘.png" alt="사람아이콘" />
+        </span>
+        <p class="modal-nonotic">
+          해당 사이트는 <strong>스터디용</strong>으로 제작되었으며,<br />
+          리소스는 <strong>원저작자</strong>에게 있음을 알려드립니다.<br />
+          문제사항이 있을 시 연락주시면 빠른 시일 내 조치하겠습니다.<br />
+          <span>본 사이트는 Chrome 에 최적화되어 있습니다.</span>
+        </p>
+        <div class="modal-close">
+          확인했습니다. <i>( 아무 곳이나 클릭하여 닫기 )</i>
+        </div>
+      </div>
+    </div>
     <!-- 고정메뉴 -->
+    <div class="fix-menu">
+      <ul class="fix-list">
+        <li>
+          <a href="#" class="fix-login">
+            <span>로그인</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="fix-shop">
+            <span>주문공급</span>
+          </a>
+        </li>
+        <li>
+          <span>최근 본 물품</span>
+          <a href="#" class="good-recent">
+            <img src="images/best_1.jpg" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="#" class="fix-qa">
+            <span>상담/문의</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="fix-talk">
+            <span>살림톡</span>
+          </a>
+        </li>
+      </ul>
+      <button class="fix-top">top</button>
+    </div>
     <!-- 기본레이아웃 -->
     <div class="wrap">
       <!-- 상단 -->
@@ -111,16 +165,16 @@
         <div class="container">
           <!-- 헤더의 상단 -->
           <div class="header-top clearfix">
-            <!-- 헤더상단의 왼쪽 -->
+            <!-- 헤더상단 왼쪽 -->
             <div class="header-top-left">
               <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="한살림 장보기" />
+                <img src="images/logo.png" alt="한살림장보기 로고" />
               </a>
               <button class="bt-schedule">
                 <img src="images/icoLocation.png" alt="공급일" />공급일
               </button>
             </div>
-            <!-- 헤더상단의 오른쪽 -->
+            <!-- 헤더상단 오른쪽 -->
             <div class="header-top-right">
               <a href="#" class="track">
                 <img src="images/icoDlvr.png" alt="배송조회" />
@@ -136,9 +190,7 @@
                     <li><a href="#">이용후기</a></li>
                     <li><a href="#">물품소식</a></li>
                     <li><a href="#">공지사항</a></li>
-                    <li>
-                      <a href="#">방사성물질검사결과</a>
-                    </li>
+                    <li><a href="#">방사성물질검사결과</a></li>
                     <li><a href="#">축산물이력검사</a></li>
                   </ul>
                 </li>
@@ -151,7 +203,7 @@
             <!-- 헤더 메인의 왼쪽 -->
             <div class="header-main-left">
               <nav class="nav">
-                <!-- 전체메뉴 레이아웃 -->
+                <!-- 전체메뉴레이아웃 -->
                 <div class="all-menu-area">
                   <button class="all-bt">
                     <i class="fa-solid fa-bars"></i>
@@ -159,7 +211,7 @@
                   </button>
                   <!-- 전체메뉴 -->
                   <div class="all-menu">
-                    <div class="all-menu-cate">
+                    <div class="all-menu-cate" data-scrollbar>
                       <ul class="cate-list">
                         <li>
                           <a href="#"><span>쌀/잡곡</span></a>
@@ -487,20 +539,20 @@
                     </div>
                   </div>
                 </div>
-                <!-- //전체메뉴 레이아웃 -->
+                <!--전체메유 레이아웃끝 -->
                 <ul class="gnb clearfix">
                   <li><a href="#">추천</a></li>
                   <li><a href="#">알뜰</a></li>
                   <li><a href="#">새물품</a></li>
                   <li><a href="#">사전예약</a></li>
-                  <li><a href="#" class="ball">영유아</a></li>
+                  <li><a href="#" class="ball">꼬마와땅</a></li>
                   <li><a href="#" class="ball">채식</a></li>
                   <li>
                     <button class="join-bt" id="join-bt">
                       참여 <i class="join-bt-icon"></i>
                     </button>
                     <ul class="join-list" id="join-list">
-                      <li><a href="#">신규물품제안</a></li>
+                      <li><a href="#">신규물픔제한</a></li>
                       <li><a href="#">모임과행사</a></li>
                       <li><a href="#">참여이벤트</a></li>
                     </ul>
@@ -519,7 +571,6 @@
                 </ul>
               </div>
             </div>
-            <!--// 헤더 메인의 왼쪽 -->
             <!-- 헤더 메인의 오른쪽 -->
             <div class="header-main-right clearfix">
               <form action="" method="get" class="search-form">
@@ -550,35 +601,33 @@
         <!-- 좌우 슬라이드 이동 버튼 -->
         <button class="visual-prev">이전</button>
         <button class="visual-next">다음</button>
-        <!-- 슬라이드 콘트롤러 -->
+        <!-- 슬라이드 컨트롤러 -->
         <div class="visual-control clearfix">
           <button class="visual-play"></button>
           <div class="visual-pg">1/17</div>
           <button class="visual-more"></button>
         </div>
       </section>
-
-      <!-- 오늘의 상품 -->
+      <!-- 오늘의상품 -->
       <section class="today">
         <div class="container">
           <h2 class="section-title">
             <b>이 물품은 어떠세요?</b>
           </h2>
           <div class="good-wrap" id="data-today">
-            <!-- 외부 오늘상품 테이터 연동 js -->
+            <!-- 외부 오늘상품 데이터 연동 js -->
           </div>
-          <div class="good-wrap no-mb" id="data-today2">
-            <!-- 외부 오늘상품 테이터 연동 js -->
-          </div>
+          <div class="good-wrap no-mb" id="data-today2"></div>
+          <!-- 외부 오늘상품 데이터 연동 js -->
         </div>
       </section>
-      <!-- 알뜰 상품 -->
+      <!-- 알뜰상품 -->
       <section class="sale">
         <div class="container">
           <div class="layout-wrap clearfix">
             <div class="layout-left">
               <h2 class="section-title section-bar">
-                놓치기 아쉬운<br />
+                놓치기 아쉬운 <br />
                 <b>알뜰물품</b>
               </h2>
               <p class="section-title-txt">
@@ -594,9 +643,8 @@
             </div>
             <div class="layout-right">
               <!-- 알뜰상품 슬라이드 -->
-              <div class="good-slide" id="data-sale">
-                <!-- 외부데이터 연동 js -->
-              </div>
+              <div class="good-slide" id="data-sale"></div>
+              <!-- 외부데이터 연동 js -->
             </div>
           </div>
         </div>
@@ -658,16 +706,14 @@
               <span>이전</span>
             </div>
             <div class="popular-slide" id="data-popular-icon">
-              <!-- 데이터 출력 json -->
+              <!-- 데이터 출력 js -->
             </div>
             <div class="popular-slide-next">
               <span>다음</span>
             </div>
           </div>
-          <!-- 인기물품 목록 -->
-          <div class="good-wrap no-mb" id="data-popular">
-            <!-- 데이터 출력 json -->
-          </div>
+          <!--  인기물품 목록 -->
+          <div class="good-wrap no-mb" id="data-popular"></div>
         </div>
       </section>
       <!-- 브랜드관 -->
@@ -679,6 +725,7 @@
                 한살림 가치를 담은 <br />
                 <b>브랜드관</b>
               </h2>
+
               <p class="section-title-txt">
                 생활 속 작은 실천! <br />
                 뜻깊은 물품소비에 참여해보세요.
@@ -693,7 +740,7 @@
             <div class="layout-right">
               <!-- 브랜드 슬라이드 -->
               <div class="brand-slide" id="data-brand">
-                <!-- 데이터 출력 json -->
+                <!-- 데이터 출력 js -->
               </div>
             </div>
           </div>
@@ -703,43 +750,281 @@
       <section class="banner">
         <div class="container">
           <div class="banner-slide" id="data-banner">
-            <!-- 데이터 출럭 json -->
+            <!-- 데이터 출력 js -->
           </div>
-          <button class="banner-slide-prev">이전</button>
-          <button class="banner-slide-next">다음</button>
+          <button class="banner-slide-prev"></button>
+          <button class="banner-slide-next"></button>
         </div>
       </section>
       <!-- 제철요리 -->
       <section class="season">
         <div class="container">
           <h2 class="section-title">제철제맛 가득한 <b>제철요리</b></h2>
-        </div>
-        <div class="season-wrap clearfix">
-          <div class="season-left">
-            <a href="#">
-              <img src="images/cook_main.jpg" alt="요리" />
-              <div class="season-info">
-                <h3>요리방법</h3>
-                <p>
-                  <span>바삭하고 고소한 건강 주전부리</span>
-                  <b>달지않은 곡물플레이크바</b>
-                </p>
-              </div>
-            </a>
-          </div>
-          <div class="season-right">
-            <div class="season-list">
-              <ul class="season-good-list">
-                <!-- 데이터 출력 json -->
-              </ul>
+
+          <div class="season-wrap clearfix">
+            <div class="season-left">
+              <a href="#">
+                <img src="images/cook_main.jpg" alt="요리" />
+                <div class="season-info">
+                  <h3>요리방법</h3>
+                  <p>
+                    <span>바삭하고 고소한 건강 주전부리</span>
+                    <b>달지않은곡물플레이크바</b>
+                  </p>
+                </div>
+              </a>
             </div>
-            <div class="season-total"></div>
+            <div class="season-right">
+              <div class="season-list">
+                <ul class="season-good-list" id="data-season" data-scrollbar>
+                  <!-- 데이터출력 js -->
+                </ul>
+              </div>
+              <div class="season-total">
+                <div class="season-good-total">
+                  <input
+                    type="checkbox"
+                    id="chall"
+                    class="season-good-check"
+                    checked
+                  />
+                  <label for="chall" class="season-label">라벨</label>
+                  전체 선택 <em id="buy-total">3</em>개
+                </div>
+                <a href="#" class="buy-good">
+                  총 <em id="buy-total-money"> 50,000</em>원 바구니 담기
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <!-- 이용후기 -->
-      <!-- 커뮤니티 -->
+      <section class="review">
+        <div class="container">
+          <div class="layout-wrap clearfix">
+            <div class="layout-left">
+              <h2 class="section-title section-bar">
+                조합원의 생생한<br />
+                <b>이용후기</b>
+              </h2>
+              <p class="section-title-txt">
+                이웃 조합원은 <br />
+                어떤 물품을 구매했을까요?
+              </p>
+
+              <div class="slide-control">
+                <div class="slide-pg">1/4</div>
+                <button class="slide-prev">이전</button>
+                <button class="slide-next">다음</button>
+              </div>
+            </div>
+            <div class="layout-right">
+              <!-- 이용후기 슬라이드 -->
+              <div class="review-slide" id="data-review">
+                <!-- 데이터 출력 -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 커뮤티니 -->
+      <section class="community">
+        <div class="container clearfix">
+          <div class="community-notice community-line">
+            <dl class="clearfix">
+              <dt>
+                <button class="community-bt community-bt-active">
+                  공지사항
+                </button>
+              </dt>
+              <dd class="community-visible-active">
+                <ul class="notice-list" id="data-notice">
+                  <!-- 데이터 출력 js -->
+                </ul>
+              </dd>
+              <dt>
+                <button class="community-bt">물품소식</button>
+              </dt>
+              <dd>
+                <ul class="notice-list" id="data-goodnews"></ul>
+              </dd>
+            </dl>
+          </div>
+          <div class="community-info community-line">
+            <h3>조합원상담실</h3>
+            <a href="tel:1661-0800" class="tel">1661-0800</a>
+            <ul class="community-info-list">
+              <li>
+                <span class="t1">평일</span>
+                <b>오전 9시~오후 6시 (점심시간 12시~1시)</b>
+              </li>
+              <li><span class="t2">주말 및 공휴일 휴무</span></li>
+              <li>
+                <span class="t1">이메일</span>
+                <a href="mailto:">hansalim@hansalim.or.kr</a>
+              </li>
+              <li>
+                <span class="t3">* 매장 구입 물품은 해당 매장 문의</span>
+              </li>
+            </ul>
+          </div>
+          <div class="community-help">
+            <h3>자주 묻는 질문</h3>
+            <ul class="community-help-list clearfix">
+              <li><a href="#">조합원정보</a></li>
+              <li><a href="#">주문/결제</a></li>
+              <li><a href="#">취소/반품/환불</a></li>
+              <li><a href="#">공급</a></li>
+              <li><a href="#">이용안내</a></li>
+              <li><a href="#">기타</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
       <!-- 하단 -->
+      <footer class="footer">
+        <div class="family-box">
+          <div class="family">
+            <div class="container">
+              <ul class="family-list">
+                <li>
+                  <p class="family-title">한살림 가족</p>
+                  <ul class="family-area">
+                    <li><a href="#">한살림연합</a></li>
+                    <li>
+                      <a href="#">한살림생산자연합회</a>
+                    </li>
+                    <li>
+                      <a href="#">한살림연합 식생활센터</a>
+                    </li>
+                    <li><a href="#">한살림재단</a></li>
+                    <li><a href="#">한살림펀딩</a></li>
+                    <li><a href="#">한살림연수원</a></li>
+                    <li>
+                      <a href="#">한살림햇빛발전협동조합</a>
+                    </li>
+                    <li>
+                      <a href="#">모심과살림연구소</a>
+                    </li>
+                    <li><a href="#">도서출판한살림</a></li>
+                    <li><a href="#">한살림참여인증</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <p class="family-title">서울/경기</p>
+                  <ul class="family-area">
+                    <li><a href="#">한살림서울</a></li>
+                    <li><a href="#">한살림고양파주</a></li>
+                    <li><a href="#">한살림경기남부</a></li>
+                    <li><a href="#">한살림성남용인</a></li>
+                    <li>
+                      <a href="#">한살림경기서남부</a>
+                    </li>
+                    <li><a href="#">한살림경기동부</a></li>
+                    <li><a href="#">한살림수원</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <p class="family-title">강원/충청</p>
+                  <ul class="family-area">
+                    <li><a href="#">한살림원주</a></li>
+                    <li><a href="#">한살림춘천</a></li>
+                    <li><a href="#">한살림강원영동</a></li>
+                    <li><a href="#">한살림청주</a></li>
+                    <li><a href="#">한살림대전</a></li>
+                    <li><a href="#">한살림천안아산</a></li>
+                    <li><a href="#">한살림충주제천</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <p class="family-title">전라/경상</p>
+                  <ul class="family-area">
+                    <li><a href="#">한살림전북</a></li>
+                    <li><a href="#">한살림광주</a></li>
+                    <li><a href="#">한살림전남남부</a></li>
+                    <li><a href="#">한살림경북북부</a></li>
+                    <li><a href="#">한살림경북서부</a></li>
+                    <li><a href="#">한살림울산</a></li>
+                    <li><a href="#">한살림경남</a></li>
+                    <li><a href="#">한살림대구</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <p class="family-title">경상/제주</p>
+                  <ul class="family-area">
+                    <li><a href="#">한살림부산</a></li>
+                    <li><a href="#">한살림경주</a></li>
+                    <li><a href="#">한살림경북동부</a></li>
+                    <li><a href="#">한살림제주</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <button class="family-close">
+                <span>닫기</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-top">
+          <div class="container clearfix">
+            <ul class="footer-menu clearfix">
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">한살림소개</a></li>
+              <li><a href="#">소식지PDF</a></li>
+              <li><a href="#">주간한살림</a></li>
+              <li><a href="#">앱다운로드</a></li>
+            </ul>
+            <button class="footer-link">
+              한살림 가족<span class="blank"></span>
+              지역한살림
+            </button>
+          </div>
+        </div>
+        <div class="footer-main">
+          <div class="container clearfix">
+            <div class="footer-copy">
+              <ul class="copy-list">
+                <li>
+                  <span>상호명 : 한살림소비자생활협동조합연합회</span>
+                  <span>대표자 : 조완석</span>
+                  <span>사업자등록번호 : <a href="#">126-82-12328</a></span>
+                  <span
+                    >통신판매업신고번호 :
+                    <a href="#"> 2014-경기안성-093호</a></span
+                  >
+                </li>
+                <li>
+                  안성사무소 : 경기 안성시 대덕면 안성대로 1526(보동리 285-3) /
+                  서울사무소 : 서울시 강남구 봉은사로81길 15(삼성동)
+                </li>
+                <li>
+                  <span>입점문의 : <a href="#"> 입점문의하기</a></span>
+                  <span
+                    >이메일 :
+                    <a href="mailto:hansalim.or.kr"
+                      >hansalim@hansalim.or.kr</a
+                    ></span
+                  >
+                </li>
+              </ul>
+              <span class="copy-txt"
+                >이곳의 모든 저작권은 한살림에게 있습니다.</span
+              >
+            </div>
+            <div class="footer-sns">
+              <ul class="sns-list clearfix">
+                <li><a href="#" class="is"></a></li>
+                <li><a href="#" class="fb"></a></li>
+                <li><a href="#" class="nb"></a></li>
+                <li><a href="#" class="yt"></a></li>
+                <li><a href="#" class="kk"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
